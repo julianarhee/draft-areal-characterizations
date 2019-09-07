@@ -93,7 +93,7 @@ Text text text.
   G.  Difference between each cell’s retinotopic preference and its surrounding neuropil for the maps shown in F. \textit{Left}:  Retinotopic scatter along azimuth. \textit{Right}:  Retinotopic scatter along elevation.
   H.  Areal of visual field coverage for each two-photon FOV for visual area V1, LM and LI. 
   I.  Degree of retinotopic scatter for all FOVs recorded in each visual area.
-  J.  lol
+  J.  unknown
   \label{fig:fig1}
 \end{figure}
 
@@ -155,7 +155,7 @@ text text text
   G.  Tuning modulation by stimulus size.
   H.  Tuning similarity as a function of cortical distance.  Aggregate metrics across datasets for each visual area.
   I.  Distributions of correlations between cortical distance and stimulus condition for all pairs of neurons within each visual area. 
-  J.  Distributions of correlation between receptive field overlap and stimulus condition for all pairs of neurons within each visual area.
+  J.  Averages of the upper triangle of trial-to-trial correlation matrices for pairs of visually responsive cells. Each point in each matrix is the correlation between two cells’ response vectors, composed of the cell’s mean stimulus response for each trial. Each data point shows the upper-triangle average for one FOV.
   \label{fig:fig3}
 \end{figure}
 
@@ -173,7 +173,17 @@ text text text
 \begin{figure}[ht]
   %\centering
   \includegraphics[width=\textwidth]{figures/objects.pdf}
-  \caption{Object decoding.}
+  \caption{Object tuning.}
+  \medskip
+  \small
+  A.  Schematic of stimulus conditions.
+  B.  Responses of eight different cells representing four example functional classes.  Each row shows two examples of:  1)  Morph-tuned, size-tolerant, 2)  Luminance-tuned only, 3) Size-tuned only, 4)  Morph- and size/luminance-tuned. Traces show mean response (+/- sem) across repetitions for each stimulus condition.
+  C.  Visualization of functional class clusters for example dataset.
+  D.  Quantification of functional class distributions by visual area.
+  E.  Analysis of the linearity of the relationship between neural responses and object features.  \textit{Left}:  Linear regression on size for example FOV. Each point shows the predicted size versus the actual size of the stimulus presented on a trial. Shade of blue denotes which morph was presented on that trial.  \textit{Middle}:  Linear regression on morph. Points and colors as in the left panel.  \textit{Right}:  Relationship between regression coefficients for morph and for size. Each data point is a cell. Lack of correlation suggests different functional sub-populations contribute to size and morph decoding.
+  F.  Linear readout of size and morph by visual area. Each data point is the correlation between the predicted vs true values for one FOV, as shown in the example regressions in the left and middle panels of E.  \textit{Left}:  Pearson’s correlation between predicted and true values for size regression.  \textit{Right}:  Pearson’s correlation between predicted and true values for morph regression. 
+  G.  Trial-to-trial correlations between pairs of visually responsive cells for one example FOV in each of V1, LM and Li. Each point in a matrix is the correlation between two cells’ response vectors, composed of the cell’s mean stimulus response for each trial. a
+  H.  Average of the upper triangle of the correlation matrix for each FOV, by visual area. Each data point is the average for one FOV. 
   \label{fig:fig4}
 \end{figure}
 
