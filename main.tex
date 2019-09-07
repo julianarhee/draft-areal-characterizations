@@ -65,10 +65,11 @@ Text text text
 
 
 \section{Introduction}
-The brain's visual system translates ambiguous and rapidly-changing patterns of light falling on the retina into a coherent representation of the external world that can be used to guide behavior. The hierarchical organization of sensory cortex is thought to play a key role in its ability to extract and learn about latent structure from visual inputs. For example, visual object recognition in primates is thought to emerge through sequential processing across cortical areas in the ventral visual pathway~\cite{rustselectivity2010, DiCarlo:2007aa, dicarlo2012does, Chen2014682}, and numerous studies show increasing selectivity for complex stimuli at progressively higher levels of a sensory processing hierarchy~\cite{desimone1984stimulus, logothetis1996visual}. 
+The brain's visual system translates ambiguous and rapidly-changing patterns of light falling on the retina into a coherent representation of the external world that can be used to guide behavior. The ability to recognize objects despite the enormous variation with which they can appear, \textit{e.g.}, due to viewing angle, scale, or lighting, is called invariant object recognition. The hierarchical organization of sensory cortex is thought to play a key role in its ability to extract and learn about latent structure from visual inputs. For example, visual object recognition in primates is thought to emerge through sequential processing across cortical areas in the ventral visual pathway~\cite{rustselectivity2010, DiCarlo:2007aa, dicarlo2012does, Chen2014682}, and numerous studies show increasing selectivity for complex stimuli at progressively higher levels of a sensory processing hierarchy~\cite{desimone1984stimulus, logothetis1996visual}.  However, the nature of the transformations that occur from one level of the hierarchy to the next remain poorly understood. 
 
-Similarly, learning produces distinct changes across the visual cortical hierarchy in a stimulus-specific and task-dependent way. For example, neural responses to task stimuli are specifically enhanced in inferotemporal cortex (IT), the highest level of the ventral path, after monkeys learn to discriminate complex shapes~\cite{kobatake1998shape, sigalavisual2002}. Other studies show changes in lower level areas, such as V1 or V4~\cite{schoupspractising2001, raiguellearning2006, ghose2002physiological, vogelsdoes1994} when simpler stimuli are used, as in orientation discrimination tasks. In all cases, perceptual learning results in specific changes in neural representations~\cite{goldstone1998perceptual, fine2002comparing, OpdeBeeck201022}. However, the nature of the transformations that occur from one level of the hierarchy to the next remain poorly understood. 
+Increasing evidence suggests rodents possess sophisticated visual machinery that would make them a tractable model for studying multi-level visual processing. Rats, in particular, can perform invariant object recognition tasks~\cite{cite, cite, cite}, and their visual cortex, speci cally, areas V1, LM, LI, and LL, exhibits properties similar to that of primates~\cite{cite, cite cite}. Here, we take advantage of optical methods, which allow simultaneous access to multiple brain regions with single-cell resolution, and present their first application to an animal model of invariant object recognition. 
 
+To understand how neural circuits encode shape variations that preserve versus alter object identity, we built a custom two-photon microscope that allows simultaneous large-scale recordings (1-2mm\textsuperscript{2}) with single-cell resolution. 
 
 \section{Retinotopic organization of rat visual cortex}
 \label{sec:retinotopy}
@@ -199,7 +200,16 @@ text text text
   \caption{Models for classification choices.}
   \medskip
   \small
-  legend text here
+  A.  Schematic of behavior paradigm.
+  B.  Object classification in behaving rats.  Left and right panels show behavioral performance for two example rats.  Animals are first trained on the default views of the objects shown in A.  Black:  Additional trained views of the objects shown in A.  Blue:  No-feedback trials to test generalization to untrained views. 
+  C.  Psychometric curves for untrained classification of intermediate morphs between the objects shown in A. Gray lines represent individual animals, black line represents mean across animals. 
+  D.  Threshold (\textit{left}) and slope (\textit{right}) of fit psychometric curves. Data points show values for each animal, bar shows mean across animals. 
+  E.  Object classification in neural data for each visual area.  N classifiers are trained to classify objects A and B with neural responses to each object  in a leave-one-out regime.  Points at morph level 0 and 100 show the average across FOVs of the average classification accuracy across folds.  Points at intermediate morph levels show the average classification choice across each presentation of a morph.  Unconnected data points at the left show the average classification choice for the size-matched luminance controls.  All classifiers trained and tested within a given size, denoted by color.  
+  F.  Classification accuracy as a function of number of neurons for each visual area.  Each line represents accuracy as a function of number of neurons for one FOV.  As in E, all classifiers are trained and tested within a given size, denoted by color.  Vertical ticks on the x-axis show the number of neurons at 70\% accuracy, for each size, for each FOV.
+  G.  Permutations of classifier training:  Size and morph generalization.
+  H.  Image of the difference between object A and object B overlaid with density maps of classifier feature weights, positioned at the cell’s receptive field position, colored by its weight (inset shows weights sorted by strength).  Blue=object A, red=object B.
+  I.  Correlation between each cell’s preferred orientation and the estimated orientation of the subset of the object falling within its receptive field, for all cells in the example shown in H.
+  J.  imple model combining measured feature properties and object classification results for each visual area.
   \label{fig:fig5}
 \end{figure}
 
