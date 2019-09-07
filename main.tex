@@ -19,9 +19,7 @@
 
 
 \author{
-  Juliana Y.~Rhee\thanks{Use footnote for providing further
-    information about author (webpage, alternative
-    address)---\emph{not} for acknowledging funding agencies.} \\
+  Juliana Y.~Rhee\\
   Center for Brain Science\\
   Department of Molecular and Cellular Biology\\
   Harvard University\\
@@ -58,7 +56,6 @@
 \maketitle
 
 \begin{abstract}
-%%\lipsum[1]
 Text text text
 \end{abstract}
 
@@ -82,9 +79,21 @@ Text goes here.
 Text text text.
 
 \begin{figure}[ht]
-  \centering
-  \includegraphics{figures/retino.pdf}
-  \caption{Sample figure caption.}
+  %\centering
+  \includegraphics[width=\textwidth]{figures/retino.pdf}
+  \caption{Macroscopic retinotopic organization in rat visual cortex.}
+  \medskip
+  \small
+  A.  Experiment setup.  
+  B.  Epifluorescence image of an example cranial window with AAV9-GCaMP6f expression. Scale bar is 1mm.  
+  C.  GCaMP6f response to a vertically-oriented moving bar. \textit{Left}: Average response to a 5 degree vertical bar on the animal’s nasal visual field (upper inset). \textit{Right}: Average response to a 5 degree vertical bar presented on the animal’s temporal visual field (upper inset). 
+  D.  Pseudo-colored maps of the cranial window shown in C for azimuth (\textit{left}) and elevation (\textit{right}). Outlined visual areas:  V1 (primary visual cortex), LM (lateral-medial), LI (lateral-intermediate), AL (antero-lateral). N=nasal visual field, T=temporal visual field. 
+  E.  Retinotopic map of two-photon field of view.  \textit{Left}: Average two-photon image of visually-evoked responses to a rightward moving bar stimulus.  Cells are color-coded by azimuth position. N=nasal, T=temporal.  \textit{Right}:  Average time-courses across 4 repetitions of the rightward moving bar for the circled cells. 
+  F.  Maps of retinotopic preference for azimuth (\textit{right}) and elevation (\textit{left}).  Cells are color-coded by position in azimuth or elevation.  All other pixels contain a smoothed estimate of neuropil retinotopic preferences. N=nasal, T=temporal.
+  G.  Difference between each cell’s retinotopic preference and its surrounding neuropil for the maps shown in F. \textit{Left}:  Retinotopic scatter along azimuth. \textit{Right}:  Retinotopic scatter along elevation.
+  H.  Areal of visual field coverage for each two-photon FOV for visual area V1, LM and LI. 
+  I.  Degree of retinotopic scatter for all FOVs recorded in each visual area.
+  J.  lol
   \label{fig:fig1}
 \end{figure}
 
@@ -102,19 +111,27 @@ Text text text.
 
 \subsubsection{RF section 1}
 Text text text
-See Figure \ref{fig:fig1}. Here is how you add footnotes. \footnote{Sample of the first footnote.}
+See Figure \ref{fig:fig2}.
 
 \begin{figure}[ht]
-  \centering
-  \includegraphics{figures/receptivefields.pdf}
-  \caption{Sample figure caption.}
-  \label{fig:fig1}
+  %\centering
+  \includegraphics[width=\textwidth]{figures/receptivefields.pdf}
+  \caption{Microscale organization and receptive field properties of rat visual cortex.}
+  \medskip
+  \small
+  A.  \textit{Left}:  PSTHs arranged by stimulus position for three example cells in V1. \textit{Right}:  Receptive fields estimated from 2d-Gaussian fits for all cells in a V1 FOV.
+  B.  \textit{Left}:  PSTHs arranged by stimulus position for three example cells in LI. \textit{Right}:  Receptive fields estimated from 2d-Gaussian fits for all cells in a LI FOV.
+  C.  Receptive field centers as a function of cortical position along the azimuth axis. Blue: Receptive field center estimated from 10 repetitions at each position. \textit{Black}: Bootstrapped estimates of receptive field centers (vertical error bars show 95\% CI, horizontal markers show median of bootstrap distribution of azimuth position). \textit{Red}: Linear regression (shaded area shows 95\% CI).
+  D.  Slope of linear regression of cortical position on receptive field position for visual areas V1, LM, and LI for azimuth (\text{left}), elevation (\text{middle}), and the average absolute values of azimuth and elevation conditions (\text{right}). Datapoints show the measured slope for each FOV.  Boxes show quartile range for each visual area, whiskers show the remainder of the distribution.
+  E.  Pairwise-distances in cortical space as a function of receptive field distance for V1, LM, and LI. Box plots as in D. 
+  F.  Cumulative distribution of average receptive field sizes for V1, LM and LI  Average combines major and minor axes of fit receptive fields. 
+  G.  ercent of areal overlap for receptive fields in V1, LM and LI.  
+  H.  ...
+  \label{fig:fig2}
 \end{figure}
 
 \subsubsection{RF section 2}
 Text text text
-See Figure \ref{fig:fig1}. Here is how you add footnotes. \footnote{Sample of the first footnote.}
-
 
 \section{Feature tuning in rat visual cortex}
 text intro here
@@ -123,15 +140,20 @@ text intro here
 text text text
 
 \begin{figure}[ht]
-  \centering
-  \includegraphics{figures/features.pdf}
-  \caption{Sample figure caption.}
-  \label{fig:fig1}
+  %\centering
+  \includegraphics[width=\textwidth]{figures/features.pdf}
+  \caption{Feature tuning.}
+  \medskip
+  \small
+  A.  \textit{Left}:  Two-photon image of responses to drifting grating stimuli with cells masked by preferred angle. \textit{Center}:  Responses to 20 presentations of drifting gratings for the three cells circles on the left. Thicker lines show average trace. \textit{Right}:  Corresponding tuning curves fit to responses shown in the middle. 
+  B.  Distribution of preferred direction for all tuned cells in example FOV shown in A.
+  
+  \label{fig:fig3}
 \end{figure}
 
 \subsection{Features section 2}
 text text text
-See Figure \ref{fig:fig1}. Here is how you add footnotes. \footnote{Sample of the first footnote.}
+See Figure \ref{fig:fig3}.
 
 
 \section{Object preference in rat visual cortex}
@@ -141,10 +163,10 @@ text intro here
 text text text
 
 \begin{figure}[ht]
-  \centering
-  \includegraphics{figures/objects.pdf}
-  \caption{Sample figure caption.}
-  \label{fig:fig1}
+  %\centering
+  \includegraphics[width=\textwidth]{figures/objects.pdf}
+  \caption{Object decoding.}
+  \label{fig:fig4}
 \end{figure}
 
 \section{Models of object classification}
@@ -154,15 +176,24 @@ text intro here
 text text text
 
 \begin{figure}[ht]
-  \centering
-  \includegraphics{figures/allstim.pdf}
-  \caption{Sample figure caption.}
-  \label{fig:fig1}
+  %\centering
+  \includegraphics[width=\textwidth]{figures/allstim.pdf}
+  \caption{Models for classification choices.}
+  \medskip
+  \small
+  legend text here
+  \label{fig:fig5}
 \end{figure}
 
+\subsection{All stim section 2}
+text text text
+
+\subsection{All stim section 3}
+text text text
 
 
-\section{Formatting}
+
+\section{Appendix}
 
 \begin{table}
  \caption{Sample table title}
@@ -183,14 +214,14 @@ text text text
 
 
 \subsection{Tables}
-\lipsum[12]
+Stuff here.
 See awesome Table~\ref{tab:table}.
 
-\subsection{Lists}
+\subsection{Supplementary Figures}
 \begin{itemize}
-\item Lorem ipsum dolor sit amet
-\item consectetur adipiscing elit. 
-\item Aliquam dignissim blandit est, in dictum tortor gravida eget. In ac rutrum magna.
+\item related to Figure \ref{fig:fig1}.
+\item related to Figure \ref{fig:fig3}.
+\item related to Figure \ref{fig:fig4}.
 \end{itemize}
 
 
